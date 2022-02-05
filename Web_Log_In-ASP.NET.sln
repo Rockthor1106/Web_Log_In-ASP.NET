@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web_Log_In-ASP.NET", "Web_Log_In-ASP.NET\Web_Log_In-ASP.NET.csproj", "{554509DA-307E-4360-9573-DC23A39A08B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{554509DA-307E-4360-9573-DC23A39A08B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{554509DA-307E-4360-9573-DC23A39A08B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{554509DA-307E-4360-9573-DC23A39A08B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{554509DA-307E-4360-9573-DC23A39A08B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE6065EB-520D-494F-BBF5-9883522910DD}
+	EndGlobalSection
+EndGlobal
