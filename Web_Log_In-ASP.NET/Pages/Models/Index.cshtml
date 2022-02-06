@@ -4,27 +4,52 @@
 @{
     ViewData["Title"] = "Index";
 }
-<h1>Log In</h1>
+<h1>Index</h1>
 
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label class="control-label">Username</label>
-                <input class="form-control" />
-            </div>
-            <div class="form-group">
-                <label class="control-label">Password</label>
-                <input type="password" class="form-control"/>
-            </div>
-            <div class="form-group" style="margin-top: 10px">
-                <input type="submit" value="Log In" class="btn btn-primary"/>
-            </div>
-            <div>
-                <p>Don't have an account? <a asp-page="SignUp">Sign Up</a></p>
-            </div>
-        </form>
-    </div>
-</div>
+<p>
+    <a asp-page="LogIn">Sign Up</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].firstname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].lastname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].birthday)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.User) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.firstname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.lastname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.birthday)
+            </td>
+            <!--
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+           -->
+        </tr>
+}
+    </tbody>
+</table>
